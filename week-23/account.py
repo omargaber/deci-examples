@@ -9,8 +9,6 @@ def validate_input(value):
         
         return False, float(value)
     except:
-        print("EXCEPT")
-        print("ECEEPTIONN", value, type(value))
         return False, str(value)
 
 
