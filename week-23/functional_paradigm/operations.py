@@ -1,6 +1,8 @@
+from __future__ import annotations
 from validation import parse_num, validate_email, validate_name, validate_new_balance
 from utilis import processing_sleep
 from mockdb import exists_users
+
 
 def create_account(name: str, email: str, new_balance: float | int):
     """Create a new bank account
