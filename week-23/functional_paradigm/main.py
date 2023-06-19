@@ -52,7 +52,7 @@ def account_operations_view(account: dict):
         operation_value = parse_num(input(OPERATION_MESSAGE))
 
         while operation_value == None or operation_value not in [1, 2, 3, 4]:
-            operation_value = input(f"Invalid input.\n{OPERATION_MESSAGE}")
+            operation_value = parse_num(input(f"Invalid input.\n{OPERATION_MESSAGE}"))
 
         print(f"You select number: {operation_value}")
         if operation_value == 4:
@@ -150,7 +150,8 @@ def main():
             continue
         else:
             account_operations_view(account)
-        print(f"Thank you for using {bank_name} banking services.")
+            print(f"Thank you for using {bank_name} banking services.")
+            break
 
 
 if __name__ == "__main__":
