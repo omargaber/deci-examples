@@ -18,7 +18,7 @@
 # Function return
 
 
-def add_wo_numbers(x, y):
+def add_two_numbers(x, y):
     value = x+y
     return value
 
@@ -26,10 +26,10 @@ def add_wo_numbers(x, y):
 # def add_wo_numbers(x, y):
 #     return x+y
 
-x = add_wo_numbers(3, 4)
+x = add_two_numbers(3, 4)
 
 # For the above example, we can identify the components of the function
-# Function name: add_wo_numbers
+# Function name: add_two_numbers
 # Function parameters: takes two arguments upon function call: x and y (BOTH SHOULD BE NUMERIC VALUES)
 # Function logic: Adds the arguments passed together
 # Function return: Expects to return one value (summation of passed arguments)
